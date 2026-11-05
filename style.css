@@ -189,3 +189,8 @@ address{font-style:normal}
 .foot-legal{margin:2rem 0 0;padding-top:1rem;border-top:1px solid rgba(255,255,255,.35);font-size:.92rem}
 .foot-legal p{max-width:none;margin:0 0 .3em}
 @media (max-width:760px){.foot-grid{grid-template-columns:1fr}}
+
+/* Avis */
+.avis-item{margin:1.4rem 0 0;padding-left:1.2rem;border-left:6px solid var(--rose)}
+.avis-item blockquote{margin:0;font:600 clamp(1.5rem,3vw,2.2rem)/1.2 "Bricolage",sans-serif;color:var(--violet)}
+.avis-item figcaption{margin-top:.6rem;font-size:1rem}
