@@ -194,3 +194,5 @@ address{font-style:normal}
 .avis-item{margin:1.4rem 0 0;padding-left:1.2rem;border-left:6px solid var(--rose)}
 .avis-item blockquote{margin:0;font:600 clamp(1.5rem,3vw,2.2rem)/1.2 "Bricolage",sans-serif;color:var(--violet)}
 .avis-item figcaption{margin-top:.6rem;font-size:1rem}
+.avis-note{margin:0 0 .4rem;font-size:1.5rem;line-height:1;letter-spacing:.08em;color:#C98A0C}
+.avis-vide{color:#D9D2E3}
