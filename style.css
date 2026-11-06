@@ -44,7 +44,7 @@ li{margin-bottom:.4em;max-width:66ch}
 .nav-mobile{display:none}
 .nav-list .nav-tel{background:var(--violet);color:var(--blanc);padding:.5em .9em;border-radius:999px;font-weight:700;white-space:nowrap}
 .nav-list .nav-tel:hover{background:var(--aubergine);color:var(--blanc);text-decoration:none}
-@media (max-width:1100px){
+@media (max-width:1240px){
   .nav-desk{display:none}
   .nav-mobile{display:block}
   .menu>summary{display:block;list-style:none;cursor:pointer;font-weight:700;color:var(--violet);padding:.5em .9em;border:2px solid var(--violet);border-radius:999px}
@@ -196,3 +196,20 @@ address{font-style:normal}
 .avis-item figcaption{margin-top:.6rem;font-size:1rem}
 .avis-note{margin:0 0 .4rem;font-size:1.5rem;line-height:1;letter-spacing:.08em;color:#C98A0C}
 .avis-vide{color:#D9D2E3}
+
+/* Menu : en-tête plus large et sous-menu */
+.site-head .wrap{width:min(100%,1320px)}
+.nav-sub{position:relative}
+.nav-sub summary{cursor:pointer;font-size:1rem;padding:.4em 0;white-space:nowrap;list-style:none}
+.nav-sub summary::-webkit-details-marker{display:none}
+.nav-sub summary::after{content:" ▾";color:var(--violet)}
+.nav-sub summary:hover{color:var(--violet)}
+.nav-sub ul{position:absolute;right:0;top:100%;z-index:6;list-style:none;margin:.3rem 0 0;padding:.5rem 1rem;background:var(--lilas);box-shadow:0 12px 20px -12px rgba(69,32,92,.35);min-width:11rem}
+
+/* Actualités */
+.news{margin-top:1.4rem;border-top:2px solid var(--aubergine)}
+.news-item{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,8fr);gap:.4rem 2rem;padding:1.4rem 0;border-bottom:2px solid var(--aubergine)}
+.news-date{margin:0;font:650 1.2rem/1.25 "Bricolage",sans-serif;color:var(--violet)}
+.news-item h3{margin-bottom:.4rem}
+.news-item p:last-child{margin-bottom:0}
+@media (max-width:700px){.news-item{grid-template-columns:1fr}}
