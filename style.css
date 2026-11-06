@@ -284,3 +284,4 @@ html{scroll-padding-top:1rem}
   .org-row .org-card{flex:1 1 calc(50% - .75rem)}
   .org-row::before,.org-row::after,.org-row .org-card::before{display:none}
 }
+.facts-note{font-size:.95rem}
