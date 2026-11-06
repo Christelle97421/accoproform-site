@@ -264,3 +264,23 @@ html{scroll-padding-top:1rem}
 .prepa-end p{font-size:1rem;margin:0}
 @media (max-width:900px){.prepa-top,.prepa-trio,.prepa-end{grid-template-columns:1fr}.blocs{grid-template-columns:repeat(2,minmax(0,1fr))}.prepa-top>:only-child .facts-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.blocs,.facts-list,.prepa-top>:only-child .facts-list{grid-template-columns:1fr}}
+
+/* Organigramme */
+.org-level{list-style:none;margin:0;padding:0;display:flex;justify-content:center;gap:1.5rem;position:relative}
+.org-top{margin-top:2rem}
+.org-mid,.org-row{margin-top:2.6rem}
+.org-mid::before,.org-row::before{content:"";position:absolute;left:50%;top:-2.6rem;height:2.6rem;border-left:3px solid var(--rose)}
+.org-row::after{content:"";position:absolute;left:calc(12.5% - .5625rem);right:calc(12.5% - .5625rem);top:-1.3rem;border-top:3px solid var(--rose)}
+.org-row::before{height:1.3rem}
+.org-row .org-card{position:relative;flex:1 1 0;min-width:0}
+.org-row .org-card::before{content:"";position:absolute;left:50%;top:-1.3rem;height:1.3rem;border-left:3px solid var(--rose)}
+.org-card{margin:0;max-width:none;width:15rem;padding:1.2rem 1rem;background:var(--lilas);border-radius:14px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:.45rem}
+.org-card strong{font:650 1.05rem/1.25 "Bricolage",sans-serif;color:var(--aubergine)}
+.org-photo{width:84px;height:84px;border-radius:50%;background:var(--blanc);display:grid;place-items:center;overflow:hidden}
+.org-photo svg{width:56px;height:56px;fill:#D9D2E3}
+.org-note{font-size:.9rem}
+@media (max-width:760px){
+  .org-row{flex-wrap:wrap}
+  .org-row .org-card{flex:1 1 calc(50% - .75rem)}
+  .org-row::before,.org-row::after,.org-row .org-card::before{display:none}
+}
