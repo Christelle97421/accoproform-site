@@ -220,13 +220,18 @@ address{font-style:normal}
 .site-head nav{min-width:0}
 
 
-/* Image dans le panneau Menu */
+
+/* Panneau Menu compact : les liens remplissent la largeur */
 @media (max-width:1300px){
-  .menu-panel{position:absolute;left:0;right:0;top:82px;background:var(--lilas);box-shadow:0 12px 20px -12px rgba(69,32,92,.35);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:2rem;align-items:center;padding:.5rem var(--gutter) 1.4rem}
-  .nav-mobile .menu-panel .nav-list{position:static;padding:0;background:none;box-shadow:none}
-  .menu-img{width:100%;height:auto;border-radius:18px}
+  .menu-panel{position:absolute;left:0;right:0;top:82px;background:var(--lilas);box-shadow:0 12px 20px -12px rgba(69,32,92,.35);padding:.8rem var(--gutter) 1.2rem}
+  .nav-mobile .menu-panel .nav-list{position:static;padding:0;background:none;box-shadow:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 2rem;align-items:center}
 }
 @media (max-width:700px){
-  .menu-panel{grid-template-columns:1fr}
-  .menu-img{display:none}
+  .nav-mobile .menu-panel .nav-list{grid-template-columns:1fr}
 }
+
+/* Texte et image côte à côte */
+.two-media{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.two-media h2{margin-bottom:1.2rem}
+.media-img{width:100%;height:auto;border-radius:18px}
+@media (max-width:820px){.two-media{grid-template-columns:1fr}}
